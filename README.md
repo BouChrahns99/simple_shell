@@ -1,8 +1,11 @@
 simple_shell project repository
+
 This repository contains the files for ALX simple_shell. It can be compiled using GCC and will execute a simple shell that can be used for some basic tasks and programs most commonly found in the /bin/ folder.
 
 Pre-requisites
+
 Authorized functions and macros:
+
 access (man 2 access)
 chdir (man 2 chdir)
 close (man 2 close)
@@ -33,7 +36,9 @@ waitpid (man 2 waitpid)
 wait3 (man 2 wait3)
 wait4 (man 2 wait4)
 write (man 2 write)
+
 GCC command to compile:
+
 gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 
 This wil compile all the '.c' files and change the output's name to 'hsh'.
