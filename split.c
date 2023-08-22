@@ -37,7 +37,7 @@ char *swap_char(char *input, int bool)
 		for (i = 0; input[i]; i++)
 		{
 			input[i] = (input[i] == 16 ? '|' : input[i]);
-sh: 1: q: not found
+			input[i] = (input[i] == 12 ? '&' : input[i]);
 		}
 	}
 	return (input);
