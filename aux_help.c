@@ -29,13 +29,27 @@ void aux_help_setenv(void)
 	write(STDOUT_FILENO, help, _strlen(help));
 }
 /**
+ * aux_help_unsetenv - Help information for the builtin unsetenv
+ * Return: no return
+ */
+void aux_help_unsetenv(void)
+{
+	char *help = "unsetenv: unsetenv (const char *name)\n\t";
+
+	write(STDOUT_FILENO, help, _strlen(help));
+	help = "Remove an entry completely from the environment\n";
+	write(STDOUT_FILENO, help, _strlen(help));
+}
+
+/**
  * aux_help_general - Entry point for help information for the help builtin
  * Return: no return
  */
 void aux_help_general(void)
 {
 	char *help = "^-^ bash, version 1.0(1)-release\n";
-write(STDOUT_FILENO, help, _strlen(help));
+
+	write(STDOUT_FILENO, help, _strlen(help));
 	help = "These commands are defined internally.Type 'help' to see the list";
 	write(STDOUT_FILENO, help, _strlen(help));
 	help = "Type 'help name' to find out more about the function 'name'.\n\n ";
